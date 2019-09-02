@@ -17,6 +17,7 @@
             padding: 0;
             font-family: sans-serif;
             background: #dfe4ea;
+            scroll-behavior: smooth;
         }
 
         #loader {
@@ -33,64 +34,64 @@
             min-height: 75px;
         }
 
-        #my-information .row{
+        #home .row{
             background: #1B9CFC;
         }
 
-        #my-information .information h3{
+        #home .information h3{
             font-weight: 900;
             color: #E0E0E0;
         }
 
-        #my-information .information h1{
+        #home .information h1{
             font-weight: 900;
             font-size: 5em;
             color: aliceblue;
         }
 
-        #my-information .information .sebagai ul{
+        #home .information .sebagai ul{
             list-style: none;
             display: inline;
             margin-left:0 !important;
 	        padding: 5px;
         }
 
-        #my-information .information .sebagai ul li{
+        #home .information .sebagai ul li{
             display: inline;
 	        margin: 0 3px;
         }
 
-        #my-information .information .sebagai ul li .badge{
+        #home .information .sebagai ul li .badge{
             padding: 10px;
             border: none;
         }
 
-        #my-information .information .kata-kata{
+        #home .information .kata-kata{
             padding: 12px;
             width: 80%;
         }
 
-        #my-information .information .kata-kata p{
+        #home .information .kata-kata p{
             font-size: 1.1em;
             color: #ffffff;
         }
 
-        #my-information .information .media-sosial{
+        #home .information .media-sosial{
             padding: 12px;
             width: 100%;
         }
 
-        #my-information .information .media-sosial ul{
+        #home .information .media-sosial ul{
             list-style: none;
 	        display: inline;
         }
 
-        #my-information .information .media-sosial ul li{
+        #home .information .media-sosial ul li{
             list-style: none;
             display: inline;
         }
 
-        #my-information .information .media-sosial ul li a{
+        #home .information .media-sosial ul li a{
             display:inline-block;
             position:relative;
             margin:0 auto 0 auto;
@@ -104,14 +105,14 @@
             background: #dfe4ea;
         }
 
-        #my-information .information .media-sosial ul li a i{
+        #home .information .media-sosial ul li a i{
             margin:0;
             line-height:40px;
             text-align: center;
             color: #a4b0be;
         }
 
-        #my-information .information .media-sosial ul li a i:hover{
+        #home .information .media-sosial ul li a i:hover{
             color: #333333;
         }
 
@@ -129,26 +130,28 @@
             background: #ecf0f1;
         }
 
+      
+
     </style>
 </head>
 <body>
-        <div id="loader"></div>
+    <div id="loader"></div>
     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top shadow">
         <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
         <div class="collapse navbar-collapse justify-content-between" id="nav">
             <ul class="navbar-nav mx-auto">
-                <li class="navbar-item"><a href="" class="nav-link text-uppercase px-3">home</a></li>
-                <li class="navbar-item"><a href="" class="nav-link text-uppercase px-3">my information</a></li>
-                <li class="navbar-item"><a href="" class="nav-link text-uppercase px-3">skill</a></li>
-                <li class="navbar-item"><a href="" class="nav-link text-uppercase px-3">work experience</a></li>
-                <li class="navbar-item"><a href="" class="nav-link text-uppercase px-3">Portfolio</a></li>
+                <li class="navbar-item"><a href="#home" class="nav-link text-uppercase px-3">home</a></li>
+                <li class="navbar-item"><a href="#information" class="nav-link text-uppercase px-3">my information</a></li>
+                <li class="navbar-item"><a href="#skill" class="nav-link text-uppercase px-3">skill</a></li>
+                <li class="navbar-item"><a href="#work-experience" class="nav-link text-uppercase px-3">work experience</a></li>
+                <li class="navbar-item"><a href="#portfolio" class="nav-link text-uppercase px-3">Portfolio</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="my-information">
+    <section id="home">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center" style="height: 100%">
                 <div class="col-sm-4 photo px-0">
@@ -185,7 +188,7 @@
         </div>
     </section>
 
-    <section class="p-4">
+    <section class="p-4" id="information">
         <div class="container">
             <div class="row">
                 <div class="col text-center mb-3">
@@ -355,7 +358,7 @@
         </div>
     </section>
 
-    <section class="p-sm-5 p-2">
+    <section class="p-sm-5 p-2" id="work-experience">
         <div class="container-fluid">
             <div class="row">
                 <div class="col text-center mb-3">
@@ -466,7 +469,7 @@
                     <img src="images/portfolio/bazar/1.png" alt="" class="img-fluid w-100">
                     <div class="card-body">
                         <h6 class="card-title">Web Bazzar Buku HMJ TI</h6>
-                        <a href="https://hmjti.akakom.ac.id/bazzar-buku/" class="small badge badge-danger" target="_blank">https://hmjti.akakom.ac.id/bazzar-buku/</a>
+                        <!-- <a href="https://hmjti.akakom.ac.id/bazzar-buku/" class="small badge badge-danger" target="_blank">https://hmjti.akakom.ac.id/bazzar-buku/</a> -->
                         <p class="card-text text-muted small">Merupakan sebuah website untuk mengelola data buku serta penjualan pada bazzar buku sebuah organisasi kampus HMJ TI STMIK Akakom Yogyakarta.</p>
                         <p class="card-text text-muted small">Web ini dibuat dengan PHP native serta database mysql.</p>
                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -491,6 +494,7 @@
                     <img src="images/portfolio/mobil/1.png" alt="" class="img-fluid w-100">
                     <div class="card-body">
                         <h6 class="card-title">Web Mobil Mazda Untuk Sales</h6>
+                        <a href="https://mazda-simprug.com" class="small badge badge-danger" target="_blank">https://mazda-simprug.com</a>
                         <p class="card-text text-muted small">Merupakan sebuah website untuk menampilkan informasi mengenai mobil mazda.</p>
                         <p class="card-text text-muted small">Aplikasi ini dibuat dengan menggunakan framework laravel, Bootstrap 3, Jquery, serta database MySql.</p>
                         <div class="btn-group" role="group" aria-label="Basic example">
